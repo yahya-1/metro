@@ -1,0 +1,1011 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>metro</title>
+    <!-- add style css -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- add normalize file -->
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <!-- font google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@400;500;700&family=Work+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+  </head>
+
+  <body>
+    <!-- start navbar -->
+    <nav class="navbar navbar-expand-lg" dir="ltr">
+      <div class="container sticky-top pt-3">
+        <a class="navbar-brand" href="#">
+          <img src="./assets/logo.png" alt="logo" width="120" height="30" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse p-2 p-md-0 justify-content-between"
+          id="navbarSupportedContent"
+        >
+          <form
+            class="d-flex w-50 ms-auto me-auto me-lg-0"
+            role="search"
+            dir="rtl"
+          >
+            <div class="container-input w-100">
+              <input
+                class="form-control border-0"
+                type="search"
+                placeholder="أنا اتسوق لأجل..."
+                aria-label="Search"
+              />
+              <img src="./assets/search-icon.png" alt="" />
+            </div>
+          </form>
+
+          <ul class="navbar-nav ms-auto ms-lg-3 mb-2 mb-lg-0">
+            <li class="nav-item my-1">
+              <a class="nav-link pb-lg-0 pe-2" href="#">تسجيل الدخول</a>
+              <div class="border-container-icon">
+                <img
+                  src="./assets/profile-icon.png"
+                  alt="logo"
+                  width="14"
+                  height="14"
+                />
+              </div>
+            </li>
+            <li class="nav-item my-1">
+              <a class="nav-link pb-lg-0 pe-2" href="#">قائمة الرغبات</a>
+              <div class="border-container-icon border-container-icon2">
+                <img
+                  src="./assets/favorite-icon.png"
+                  alt="logo"
+                  width="14"
+                  height="14"
+                />
+              </div>
+            </li>
+            <li class="nav-item my-1">
+              <a class="nav-link pb-lg-0 pe-2" aria-current="page" href="#"
+                >عربة التسوق</a
+              >
+              <div class="border-container-icon border-container-icon2">
+                <img
+                  src="./assets/cart-icon.png"
+                  alt="logo"
+                  width="16"
+                  height="14"
+                />
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- end navbar -->
+    <!-- start navigation  -->
+    <div class="header-tabs d-flex align-items-center p-3 mt-4">
+      <div class="container">
+        <div class="row flex-column-reverse flex-lg-row">
+          <div
+            class="col-lg-3 col-12 d-flex justify-content-center align-items-center "
+          >
+            <div class="dropdown mt-2 mt-lg-0">
+              <button
+                class="btn btn__dropdown py-2 d-flex align-items-center justify-content-between"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img src="./assets/shape.png" />
+                <div class="text__dropdawon">جميع الفئات</div>
+                <img src="./assets/Polygon.png" />
+              </button>
+              <ul class="dropdown-menu">
+                <li class="">
+                  <a
+                    class="dropdown-item d-flex justify-content-start"
+                    href="#"
+                  >
+                    <img class="ms-2" src="./assets/catogery/a.png" alt="" />
+                    وصل حديثاً
+                  </a>
+                </li>
+                <li class="">
+                  <a
+                    class="dropdown-item d-flex justify-content-start"
+                    href="#"
+                  >
+                    <img class="ms-2" src="./assets/catogery/a2.png" alt="" />
+                    العروض
+                  </a>
+                </li>
+                <li class="">
+                  <a
+                    class="dropdown-item d-flex justify-content-start"
+                    href="#"
+                  >
+                    <img class="ms-2" src="./assets/catogery/b.png" alt="" />
+                    الأكثر مبيعاً
+                  </a>
+                </li>
+                <li class="">
+                  <a
+                    class="dropdown-item d-flex justify-content-start"
+                    href="#"
+                  >
+                    <img class="ms-2" src="./assets/catogery/c.png" alt="" />
+                    العلامة التجارية
+                  </a>
+                </li>
+                <li class="">
+                  <a
+                    class="dropdown-item d-flex justify-content-start"
+                    href="#"
+                  >
+                    <img class="ms-2" src="./assets/catogery/d.png" alt="" />
+                    المخبوزات والعجنات
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div
+            class="col-lg-9 col-12 text-center ms-auto me-auto tab__contant"
+          >
+            <ul class="nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >الرئيسية</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >حول الشركة</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >التوظيف</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >الإعلام والأخبار</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >الفديوهات</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >اتصل بنا</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end navigation  -->
+
+    <!-- start landing-cover -->
+    <!-- <div class="row w-100"> -->
+    <div class="landing-cover">
+      <img src="./assets/coverLanding.png" alt="" />
+    </div>
+    <!-- </div> -->
+    <!-- End landing-cover -->
+
+    <!-- start landing view product -->
+    <div class="landing-product">
+      <div class="container pt-5">
+        <div class="container-productsAll">
+          <div class="container">
+            <div class="header-products">
+              <span class="header">عروض يومية</span>
+              <div class="more-text">
+                <span>عرض المزيد</span>
+                <img src="./assets/arrow.png" alt="" />
+              </div>
+            </div>
+  
+            <div
+              id="carouselExampleControls"
+              class="carousel carousel-dark slide"
+              data-bs-ride="false"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="cards-wrapper py-4">
+                    <div class="card__2 card">
+                      <div class="image-wrapper">
+                        <img src="./assets/product.png" alt="##" />
+                        <span><img src="./assets/favorite-icon-card.png" /></span>
+                        <span><img src="./assets/cart.png" /></span>
+                      </div>
+                      <span class="price card-text"
+                        >10.00<img src="./assets/shakel.png"
+                      /></span>
+                      <div class="rating">
+                        <img src="./assets/rating.png" />
+                      </div>
+                      <span class="name card-text">حلاوة كاكاو</span>
+                    </div>
+  
+                    <div class="card__2 card">
+                      <div class="image-wrapper">
+                        <img src="./assets/Offers/2.png" alt="##" />
+                        <span><img src="./assets/favorite-icon-card.png" /></span>
+                        <span><img src="./assets/cart.png" /></span>
+                      </div>
+                      <span class="price card-text"
+                        >10.00<img src="./assets/shakel.png"
+                      /></span>
+                      <div class="rating">
+                        <img src="./assets/rating.png" />
+                      </div>
+                      <span class="name card-text">حلاوة كاكاو</span>
+                    </div>
+  
+                    <div class="card__2 card">
+                      <div class="image-wrapper">
+                        <img src="./assets/Offers/3.png" alt="##" />
+                        <span><img src="./assets/favorite-icon-card.png" /></span>
+                        <span><img src="./assets/cart.png" /></span>
+                      </div>
+                      <span class="price card-text"
+                        >10.00<img src="./assets/shakel.png"
+                      /></span>
+                      <div class="rating">
+                        <img src="./assets/rating.png" />
+                      </div>
+                      <span class="name card-text">حلاوة كاكاو</span>
+                    </div>
+  
+                    <div class="card__2 card">
+                      <div class="image-wrapper">
+                        <img src="./assets/Offers/4.png" alt="##" />
+                        <span><img src="./assets/favorite-icon-card.png" /></span>
+                        <span><img src="./assets/cart.png" /></span>
+                      </div>
+                      <span class="price card-text"
+                        >10.00<img src="./assets/shakel.png"
+                      /></span>
+                      <div class="rating">
+                        <img src="./assets/rating.png" />
+                      </div>
+                      <span class="name card-text">حلاوة كاكاو</span>
+                    </div>
+  
+                    <div class="card__2 card">
+                      <div class="image-wrapper">
+                        <img src="./assets/Offers/5.png" alt="##" />
+                        <span><img src="./assets/favorite-icon-card.png" /></span>
+                        <span><img src="./assets/cart.png" /></span>
+                      </div>
+                      <span class="price card-text"
+                        >10.00<img src="./assets/shakel.png"
+                      /></span>
+                      <div class="rating">
+                        <img src="./assets/rating.png" />
+                      </div>
+                      <span class="name card-text">حلاوة كاكاو</span>
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="carousel-item">
+                  <div class="cards-wrapper py-4">
+                    <div class="card__2 card">
+                      <div class="image-wrapper">
+                        <img src="./assets/Offers/4.png" alt="##" />
+                        <span><img src="./assets/favorite-icon-card.png" /></span>
+                        <span><img src="./assets/cart.png" /></span>
+                      </div>
+                      <span class="price card-text"
+                        >10.00<img src="./assets/shakel.png"
+                      /></span>
+                      <div class="rating">
+                        <img src="./assets/rating.png" />
+                      </div>
+                      <span class="name card-text">حلاوة كاكاو</span>
+                    </div>
+  
+                    <div class="card__2 card">
+                      <div class="image-wrapper">
+                        <img src="./assets/product.png" alt="##" />
+                        <span><img src="./assets/favorite-icon-card.png" /></span>
+                        <span><img src="./assets/cart.png" /></span>
+                      </div>
+                      <span class="price card-text"
+                        >10.00<img src="./assets/shakel.png"
+                      /></span>
+                      <div class="rating">
+                        <img src="./assets/rating.png" />
+                      </div>
+                      <span class="name card-text">حلاوة كاكاو</span>
+                    </div>
+  
+                    <div class="card__2 card">
+                      <div class="image-wrapper">
+                        <img src="./assets/Offers/2.png" alt="##" />
+                        <span><img src="./assets/favorite-icon-card.png" /></span>
+                        <span><img src="./assets/cart.png" /></span>
+                      </div>
+                      <span class="price card-text"
+                        >10.00<img src="./assets/shakel.png"
+                      /></span>
+                      <div class="rating">
+                        <img src="./assets/rating.png" />
+                      </div>
+                      <span class="name card-text">حلاوة كاكاو</span>
+                    </div>
+  
+                    <div class="card__2 card">
+                      <div class="image-wrapper">
+                        <img src="./assets/Offers/5.png" alt="##" />
+                        <span><img src="./assets/favorite-icon-card.png" /></span>
+                        <span><img src="./assets/cart.png" /></span>
+                      </div>
+                      <span class="price card-text"
+                        >10.00<img src="./assets/shakel.png"
+                      /></span>
+                      <div class="rating">
+                        <img src="./assets/rating.png" />
+                      </div>
+                      <span class="name card-text">حلاوة كاكاو</span>
+                    </div>
+  
+                    <div class="card__2 card">
+                      <div class="image-wrapper">
+                        <img src="./assets/Offers/3.png" alt="##" />
+                        <span><img src="./assets/favorite-icon-card.png" /></span>
+                        <span><img src="./assets/cart.png" /></span>
+                      </div>
+                      <span class="price card-text"
+                        >10.00<img src="./assets/shakel.png"
+                      /></span>
+                      <div class="rating">
+                        <img src="./assets/rating.png" />
+                      </div>
+                      <span class="name card-text">حلاوة كاكاو</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+  
+        <div class="container-productsAll">
+          <div class="container my-5">
+            <div class="header-products">
+              <span class="header">وصل حديثاً</span>
+              <div class="more-text">
+                <span>عرض المزيد</span>
+                <img src="./assets/arrow.png" alt="" />
+              </div>
+            </div>
+  
+            <div
+              id="carouselExampleControls2"
+              class="carousel carousel-dark slide"
+              data-bs-ride="false"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="cards-wrapper py-4">
+                    <div class="card__2 card">
+                      <div class="image-wrapper">
+                        <img src="./assets/newly/1.png" alt="##" />
+                        <span><img src="./assets/favorite-icon-card.png" /></span>
+                        <span><img src="./assets/cart.png" /></span>
+                      </div>
+                      <span class="price card-text"
+                        >10.00<img src="./assets/shakel.png"
+                      /></span>
+                      <div class="rating">
+                        <img src="./assets/rating.png" />
+                      </div>
+                      <span class="name card-text">حلاوة كاكاو</span>
+                    </div>
+  
+                    <div class="card__2 card">
+                      <div class="image-wrapper">
+                        <img src="./assets/newly/2.png" alt="##" />
+                        <span><img src="./assets/favorite-icon-card.png" /></span>
+                        <span><img src="./assets/cart.png" /></span>
+                      </div>
+                      <span class="price card-text"
+                        >10.00<img src="./assets/shakel.png"
+                      /></span>
+                      <div class="rating">
+                        <img src="./assets/rating.png" />
+                      </div>
+                      <span class="name card-text">حلاوة كاكاو</span>
+                    </div>
+  
+                    <div class="card__2 card">
+                      <div class="image-wrapper">
+                        <img src="./assets/newly/3.png" alt="##" />
+                        <span><img src="./assets/favorite-icon-card.png" /></span>
+                        <span><img src="./assets/cart.png" /></span>
+                      </div>
+                      <span class="price card-text"
+                        >10.00<img src="./assets/shakel.png"
+                      /></span>
+                      <div class="rating">
+                        <img src="./assets/rating.png" />
+                      </div>
+                      <span class="name card-text">حلاوة كاكاو</span>
+                    </div>
+  
+                    <div class="card__2 card">
+                      <div class="image-wrapper">
+                        <img src="./assets/newly/4.png" alt="##" />
+                        <span><img src="./assets/favorite-icon-card.png" /></span>
+                        <span><img src="./assets/cart.png" /></span>
+                      </div>
+                      <span class="price card-text"
+                        >10.00<img src="./assets/shakel.png"
+                      /></span>
+                      <div class="rating">
+                        <img src="./assets/rating.png" />
+                      </div>
+                      <span class="name card-text">حلاوة كاكاو</span>
+                    </div>
+  
+                    <div class="card__2 card">
+                      <div class="image-wrapper">
+                        <img src="./assets/newly/5.png" alt="##" />
+                        <span><img src="./assets/favorite-icon-card.png" /></span>
+                        <span><img src="./assets/cart.png" /></span>
+                      </div>
+                      <span class="price card-text"
+                        >10.00<img src="./assets/shakel.png"
+                      /></span>
+                      <div class="rating">
+                        <img src="./assets/rating.png" />
+                      </div>
+                      <span class="name card-text">حلاوة كاكاو</span>
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="carousel-item">
+                  <div class="cards-wrapper py-4">
+                    <div class="card__2 card">
+                      <div class="image-wrapper">
+                        <img src="./assets/newly/4.png" alt="##" />
+                        <span><img src="./assets/favorite-icon-card.png" /></span>
+                        <span><img src="./assets/cart.png" /></span>
+                      </div>
+                      <span class="price card-text"
+                        >10.00<img src="./assets/shakel.png"
+                      /></span>
+                      <div class="rating">
+                        <img src="./assets/rating.png" />
+                      </div>
+                      <span class="name card-text">حلاوة كاكاو</span>
+                    </div>
+  
+                    <div class="card__2 card">
+                      <div class="image-wrapper">
+                        <img src="./assets/newly/2.png" alt="##" />
+                        <span><img src="./assets/favorite-icon-card.png" /></span>
+                        <span><img src="./assets/cart.png" /></span>
+                      </div>
+                      <span class="price card-text"
+                        >10.00<img src="./assets/shakel.png"
+                      /></span>
+                      <div class="rating">
+                        <img src="./assets/rating.png" />
+                      </div>
+                      <span class="name card-text">حلاوة كاكاو</span>
+                    </div>
+  
+                    <div class="card__2 card">
+                      <div class="image-wrapper">
+                        <img src="./assets/newly/1.png" alt="##" />
+                        <span><img src="./assets/favorite-icon-card.png" /></span>
+                        <span><img src="./assets/cart.png" /></span>
+                      </div>
+                      <span class="price card-text"
+                        >10.00<img src="./assets/shakel.png"
+                      /></span>
+                      <div class="rating">
+                        <img src="./assets/rating.png" />
+                      </div>
+                      <span class="name card-text">حلاوة كاكاو</span>
+                    </div>
+  
+                    <div class="card__2 card">
+                      <div class="image-wrapper">
+                        <img src="./assets/newly/6.png" alt="##" />
+                        <span><img src="./assets/favorite-icon-card.png" /></span>
+                        <span><img src="./assets/cart.png" /></span>
+                      </div>
+                      <span class="price card-text"
+                        >10.00<img src="./assets/shakel.png"
+                      /></span>
+                      <div class="rating">
+                        <img src="./assets/rating.png" />
+                      </div>
+                      <span class="name card-text">حلاوة كاكاو</span>
+                    </div>
+  
+                    <div class="card__2 card">
+                      <div class="image-wrapper">
+                        <img src="./assets/newly/3.png" alt="##" />
+                        <span><img src="./assets/favorite-icon-card.png" /></span>
+                        <span><img src="./assets/cart.png" /></span>
+                      </div>
+                      <span class="price card-text"
+                        >10.00<img src="./assets/shakel.png"
+                      /></span>
+                      <div class="rating">
+                        <img src="./assets/rating.png" />
+                      </div>
+                      <span class="name card-text">حلاوة كاكاو</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleControls2"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleControls2"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+  
+        <div class="container-productsAll">
+          <div class="container my-5">
+            <div class="header-products">
+              <span class="header">أفضل المبيعات</span>
+              <div class="more-text">
+                <span>عرض المزيد</span>
+                <img src="./assets/arrow.png" alt="" />
+              </div>
+            </div>
+  
+            <div
+              id="carouselExampleControls3"
+              class="carousel carousel-dark slide"
+              data-bs-ride="false"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="cards-wrapper py-4">
+                    <div class="card__2 card">
+                      <div class="image-wrapper">
+                        <img src="./assets/sales/1.png" alt="##" />
+                        <span><img src="./assets/favorite-icon-card.png" /></span>
+                        <span><img src="./assets/cart.png" /></span>
+                      </div>
+                      <span class="price card-text"
+                        >10.00<img src="./assets/shakel.png"
+                      /></span>
+                      <div class="rating">
+                        <img src="./assets/rating.png" />
+                      </div>
+                      <span class="name card-text">حلاوة كاكاو</span>
+                    </div>
+  
+                    <div class="card__2 card">
+                      <div class="image-wrapper">
+                        <img src="./assets/sales/2.png" alt="##" />
+                        <span><img src="./assets/favorite-icon-card.png" /></span>
+                        <span><img src="./assets/cart.png" /></span>
+                      </div>
+                      <span class="price card-text"
+                        >10.00<img src="./assets/shakel.png"
+                      /></span>
+                      <div class="rating">
+                        <img src="./assets/rating.png" />
+                      </div>
+                      <span class="name card-text">حلاوة كاكاو</span>
+                    </div>
+  
+                    <div class="card__2 card">
+                      <div class="image-wrapper">
+                        <img src="./assets/sales/3.png" alt="##" />
+                        <span><img src="./assets/favorite-icon-card.png" /></span>
+                        <span><img src="./assets/cart.png" /></span>
+                      </div>
+                      <span class="price card-text"
+                        >10.00<img src="./assets/shakel.png"
+                      /></span>
+                      <div class="rating">
+                        <img src="./assets/rating.png" />
+                      </div>
+                      <span class="name card-text">حلاوة كاكاو</span>
+                    </div>
+  
+                    <div class="card__2 card">
+                      <div class="image-wrapper">
+                        <img src="./assets/sales/4.png" alt="##" />
+                        <span><img src="./assets/favorite-icon-card.png" /></span>
+                        <span><img src="./assets/cart.png" /></span>
+                      </div>
+                      <span class="price card-text"
+                        >10.00<img src="./assets/shakel.png"
+                      /></span>
+                      <div class="rating">
+                        <img src="./assets/rating.png" />
+                      </div>
+                      <span class="name card-text">حلاوة كاكاو</span>
+                    </div>
+  
+                    <div class="card__2 card">
+                      <div class="image-wrapper">
+                        <img src="./assets/sales/5.png" alt="##" />
+                        <span><img src="./assets/favorite-icon-card.png" /></span>
+                        <span><img src="./assets/cart.png" /></span>
+                      </div>
+                      <span class="price card-text"
+                        >10.00<img src="./assets/shakel.png"
+                      /></span>
+                      <div class="rating">
+                        <img src="./assets/rating.png" />
+                      </div>
+                      <span class="name card-text">حلاوة كاكاو</span>
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="carousel-item">
+                  <div class="cards-wrapper py-4">
+                    <div class="card__2 card">
+                      <div class="image-wrapper">
+                        <img src="./assets/sales/4.png" alt="##" />
+                        <span><img src="./assets/favorite-icon-card.png" /></span>
+                        <span><img src="./assets/cart.png" /></span>
+                      </div>
+                      <span class="price card-text"
+                        >10.00<img src="./assets/shakel.png"
+                      /></span>
+                      <div class="rating">
+                        <img src="./assets/rating.png" />
+                      </div>
+                      <span class="name card-text">حلاوة كاكاو</span>
+                    </div>
+  
+                    <div class="card__2 card">
+                      <div class="image-wrapper">
+                        <img src="./assets/sales/2.png" alt="##" />
+                        <span><img src="./assets/favorite-icon-card.png" /></span>
+                        <span><img src="./assets/cart.png" /></span>
+                      </div>
+                      <span class="price card-text"
+                        >10.00<img src="./assets/shakel.png"
+                      /></span>
+                      <div class="rating">
+                        <img src="./assets/rating.png" />
+                      </div>
+                      <span class="name card-text">حلاوة كاكاو</span>
+                    </div>
+  
+                    <div class="card__2 card">
+                      <div class="image-wrapper">
+                        <img src="./assets/sales/6.png" alt="##" />
+                        <span><img src="./assets/favorite-icon-card.png" /></span>
+                        <span><img src="./assets/cart.png" /></span>
+                      </div>
+                      <span class="price card-text"
+                        >10.00<img src="./assets/shakel.png"
+                      /></span>
+                      <div class="rating">
+                        <img src="./assets/rating.png" />
+                      </div>
+                      <span class="name card-text">حلاوة كاكاو</span>
+                    </div>
+  
+                    <div class="card__2 card">
+                      <div class="image-wrapper">
+                        <img src="./assets/sales/1.png" alt="##" />
+                        <span><img src="./assets/favorite-icon-card.png" /></span>
+                        <span><img src="./assets/cart.png" /></span>
+                      </div>
+                      <span class="price card-text"
+                        >10.00<img src="./assets/shakel.png"
+                      /></span>
+                      <div class="rating">
+                        <img src="./assets/rating.png" />
+                      </div>
+                      <span class="name card-text">حلاوة كاكاو</span>
+                    </div>
+  
+                    <div class="card__2 card">
+                      <div class="image-wrapper">
+                        <img src="./assets/sales/5.png" alt="##" />
+                        <span><img src="./assets/favorite-icon-card.png" /></span>
+                        <span><img src="./assets/cart.png" /></span>
+                      </div>
+                      <span class="price card-text"
+                        >10.00<img src="./assets/shakel.png"
+                      /></span>
+                      <div class="rating">
+                        <img src="./assets/rating.png" />
+                      </div>
+                      <span class="name card-text">حلاوة كاكاو</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleControls3"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleControls3"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+      
+  <!-- start تسوق حسب المطلوب -->
+  <section class="products-categories">
+    <div class="container">
+      <span class="products-cateogries-title">تسوق حسب المطلوب</span>
+      <div class="product-categories-types">
+          <div class="type-card">
+            <div class="image">
+              <img src="./assets/types/p5.png" alt="fresh-food">
+            </div>
+            <p>اطعمة طازجة</p>
+          </div>
+          <div class="type-card">
+            <div class="image">
+              <img src="./assets/types/p4.png" alt="fruits">
+            </div>
+            <p>خضروات وفواكه</p>
+          </div>
+          <div class="type-card">
+            <div class="image">
+              <img src="./assets/types/p3.png" alt="drinks">
+            </div>
+            <p>المشروبات</p>
+          </div>
+          <div class="type-card">
+            <div class="image">
+              <img src="./assets/types/p2.png" alt="milk-products">
+            </div>
+            <p>منتجات الالبان</p>
+          </div>
+          <div class="type-card">
+            <div class="image">
+              <img src="./assets/types/p1.png" alt="food">
+            </div>
+            <p>أطعمة طازجة</p>
+          </div>
+          <div class="type-card">
+            <div class="image more-types">
+              عرض المزيد
+            </div>
+          </div>
+    </div>
+    </div>
+
+  </section>
+  <!-- end تسوق حسب المطلوب -->
+
+  <!-- start markas section -->
+  <section class="marka">
+    <div class="container">
+      <div class="marka-header">
+        <span >أفضل الماركات</span>
+    </div>
+    <div class="marka-types">
+      <div class="marka-card">
+         <div class="marka-img">
+          <img src="./assets/markas/p1.png" alt="marka">
+          <span>Pepsi</span>
+         </div>
+         <img src="./assets/arrow-left.png" alt="" />
+      </div>
+      <div class="marka-card">
+         <div class="marka-img">
+          <img src="./assets/markas/p2.png" alt="marka">
+          <span>Dove</span>
+         </div>
+         <img src="./assets/arrow-left.png" alt="" />
+      </div>
+      <div class="marka-card">
+         <div class="marka-img">
+          <img src="./assets/markas/p3.png" alt="marka">
+          <span>Tide</span>
+         </div>
+         <img src="./assets/arrow-left.png" alt="" />
+      </div>
+      <div class="marka-card">
+         <div class="marka-img">
+          <img src="./assets/markas/p4.png" alt="marka">
+          <span>Twix</span>
+         </div>
+         <img src="./assets/arrow-left.png" alt="" />
+      </div>
+      <div class="marka-card">
+         <div class="marka-img">
+          <img src="./assets/markas/p5.png" alt="marka">
+          <span>Oxi</span>
+         </div>
+         <img src="./assets/arrow-left.png" alt="" />
+      </div>
+      <div class="marka-card">
+         <div class="marka-img">
+          <img src="./assets/markas/p6.png" alt="marka">
+          <span>Oreo</span>
+         </div>
+         <img src="./assets/arrow-left.png" alt="" />
+      </div>
+      <div class="marka-card">
+         <div class="marka-img">
+          <img src="./assets/markas/p7.png" alt="marka">
+          <span>Pringles</span>
+         </div>
+         <img src="./assets/arrow-left.png" alt="" />
+      </div>
+      <div class="marka-card">
+         <div class="marka-img">
+          <img src="./assets/markas/p8.png" alt="marka">
+          <span>Amazon</span>
+         </div>
+         <img src="./assets/arrow-left.png" alt="" />
+      </div>
+
+    </div>
+    </div>
+  
+  </section>
+  <!-- end markas section -->
+  </div>
+  <!-- End landing view product -->
+
+  <!-- start footer -->
+  <footer>
+     <div class="container">
+      <div class="row pt-3 pb-5 justify-content-center">
+        <div class="col-12 col-lg-4 d-flex justify-content-center text-center">
+          <div class="info">
+            <img src="./assets/white-logo.png" />
+            <p class="my-4">أول مركز تسوق في قطاع غزة فيه أجود المنتجات بأسعار منافسة</p>
+            <form>
+              <input  type="text" placeholder="عنوان بريدك الإلكتروني">
+              <input type="submit" value="الاشتراك">
+            </form>
+          </div>
+        </div>
+
+        <div class="col-4 col-lg-3 pt-3">
+          <div class="contact-details">
+            <h3>معلومات الأتصال</h3>
+            <dl>
+              <dt>عنوان :</dt>
+              <dd>غزة_ شارع الشهداء-غرب أصدقاء المريض</dd>
+              <dt>هاتف :</dt>
+              <dd>28822888</dd>
+              <dt>البريد الإلكتروني :</dt>
+              <dd>metro@metro-markwt.ps</dd>
+          </dl>
+          </div>
+        </div>
+
+        <div class="col-4 col-lg-3 pt-3">
+          <div class="common-categories">
+            <h3>التصنيفات الشائعة</h3>
+            <ul>
+              <li><a href="#">المشروبات</a></li>
+              <li><a href="#">أطعمة طازجة</a></li>
+              <li><a href="#">منتجات الألبان</a></li>
+              <li><a href="#">خضراوات وفواكهة</a></li>
+              <li><a href="#">مواد غذائية</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-4 col-lg-2 pt-3">
+          <div class="myAccount">
+            <h3>حسابي</h3>
+            <ul>
+              <li><a href="#">تسجيل الدخول</a></li>
+              <li><a href="#">تاريخ الطلب</a></li>
+              <li><a href="#">قائمة امنياتي</a></li>
+              <li><a href="#">ترتيب المسار</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+     </div>
+  </footer> 
+  <!-- end footer -->
+    </div>
+
+
+    <!-- add javascript -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
